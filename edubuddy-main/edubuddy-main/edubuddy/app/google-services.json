@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "502386278218",
+    "project_id": "buddy-final",
+    "storage_bucket": "buddy-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502386278218:android:ac31070022f2fa18054bb3",
+        "android_client_info": {
+          "package_name": "com.edu.edubuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0PrudFrDkjWwe7e9c8c0pINQKF5nzfXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

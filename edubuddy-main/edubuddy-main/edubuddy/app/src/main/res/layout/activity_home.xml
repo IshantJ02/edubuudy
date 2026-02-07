@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Header with Logo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="156dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="App Logo"
+            android:src="@drawable/ic_app_logo" />
+    </LinearLayout>
+
+    <!-- Group Name Field -->
+    <EditText
+        android:id="@+id/groupNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="Enter Group Name"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <!-- Create Group Button -->
+    <Button
+        android:id="@+id/createGroupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Group"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Search Group -->
+    <SearchView
+        android:id="@+id/searchGroupField"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginBottom="12dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Groups..." />
+
+    <!-- Available Groups Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Groups"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Group List -->
+    <ListView
+        android:id="@+id/groupListView"
+        android:layout_width="match_parent"
+        android:layout_height="446dp"
+        android:background="#f5f5f5"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:maxHeight="150dp"
+        android:padding="4dp" />
+
+
+    <!-- Join Group Button -->
+    <Button
+        android:id="@+id/joinGroupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Group"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <!-- Footer with Home and Profile buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"> <!-- Add marginBottom to give space at the bottom -->
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Home"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:text="Profile"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
